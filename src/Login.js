@@ -80,6 +80,7 @@ const Login = () => {
         style={{
           color: '#f58442',
           fontSize: 16,
+          
           fontWeight: 'bold',
         }}
         >Sign Up</Text></Text>
