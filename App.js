@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 import Login from "./src/Login";
 import Register from "./src/Register";
 import Dashboard from "./src/Dashboard";
-// import Header from "./components/Header";
+import Header from "./components/Header";
 import {firebase} from './config'
 // import { Suspense } from "react";
 
