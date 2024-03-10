@@ -8,7 +8,7 @@ const Dashboard = () => {
   useEffect(() => {
     firebase
       .firestore()
-      .collection("users")
+      .collection("user")
       .doc(firebase.auth().currentUser.uid)
       .get()
       .then((snapshot) => {

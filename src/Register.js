@@ -16,9 +16,9 @@ const Register = () => {
       await firebase.auth().createUserWithEmailAndPassword(email, password);
       await firebase.auth().currentUser.sendEmailVerification({
         handleCodeInApp: true,
-        url: 'https://fitness-b9e6c.firebaseapp.com', 
+        url: 'https://auth-3a5a2.firebaseapp.com', 
       });
-      await firebase.firestore().collection('users').doc(firebase.auth().currentUser.uid).set({
+      await firebase.firestore().collection('user').doc(firebase.auth().currentUser.uid).set({
         firstName,
         lastName,
         email,
